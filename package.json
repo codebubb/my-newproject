@@ -2,14 +2,19 @@
   "name": "newproject",
   "version": "1.0.0",
   "description": "My new super cool project",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel serve src/index.html",
+    "build": "parcel build src/index.html"
   },
+  "browserslist": "defaults",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
